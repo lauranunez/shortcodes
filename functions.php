@@ -24,6 +24,13 @@ function EMO_shortcode($atts = [], $content = null)
 }
 add_shortcode('codigo', 'EMO_shortcode');
 
+/* shortcode para un espacio */
+function blankline() {
+ return '<p>&nbsp;</p>';
+}
+add_shortcode('blank', 'blankline');
+?>
+
 <style>
 .emo-button {
 padding: 12px;
